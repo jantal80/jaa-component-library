@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Button, Label, Input } from '../';
+import { Button as MuiButton } from '@mui/material';
+import { JaaButton } from '../lib/components/JaaButton/JaaButton';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,6 +39,8 @@ function App() {
         <Button onClick={handleClickCustomCount}>
           count is {count}
         </Button>
+        <MuiButton>muibutton</MuiButton>
+        <JaaButton></JaaButton>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
