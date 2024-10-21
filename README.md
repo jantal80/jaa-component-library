@@ -12,7 +12,7 @@ The demo library on npm: https://www.npmjs.com/package/@receter/my-component-lib
 ## Installation
 You can install it with npm (don't expect much fanciness):
 ```bash
-npm i @jantal80/my-component-library
+npm i @jantal80/jaa-my-component-library
 ```
 
 ## Usage

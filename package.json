@@ -1,7 +1,7 @@
 {
-  "name": "jaa-component-library",
+  "name": "jaa-my-component-library",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.5",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -9,8 +9,7 @@
     "dist"
   ],
   "repository": {
-    "type": "git",
-    "url": "https://github.com/receter/my-component-library"
+    "type": "git"
   },
   "sideEffects": [
     "**/*.css"
@@ -23,7 +22,9 @@
   },
   "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.4"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
@@ -41,9 +42,7 @@
     "typescript": "^5.4.3",
     "vite": "^4.5.3",
     "vite-plugin-dts": "^3.7.3",
-    "vite-plugin-lib-inject-css": "^2.0.1"
-  },
-  "dependencies": {
+    "vite-plugin-lib-inject-css": "^2.0.1",
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^6.1.4"
   }
