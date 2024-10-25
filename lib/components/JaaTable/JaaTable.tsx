@@ -5,7 +5,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { ThemeProvider, useTheme } from '@mui/material';
+import { useTheme } from '@mui/material';
 
 
 function createData(
@@ -28,8 +28,7 @@ const rows = [
 export default function JaaTable() {
     const theme = useTheme();
   return (
-    <ThemeProvider theme={theme}>
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} style={{backgroundColor: theme.palette.background.paper}}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -58,6 +57,5 @@ export default function JaaTable() {
         </TableBody>
       </Table>
     </TableContainer>
-    </ThemeProvider>
   );
 }
